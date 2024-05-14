@@ -18,16 +18,7 @@
 - [Documentation](#documentation)
 
 <a name="intro"></a>
-A modern, simple, fast & flexible micro framework for building HTTP REST/RPC APIs in Go backed by OpenAPI 3 and JSON Schema. Pronounced IPA: [/'hjuːmɑ/](https://en.wiktionary.org/wiki/Wiktionary:International_Phonetic_Alphabet). The goals of this project are to provide:
-
-- Incremental adoption for teams with existing services
-  - Bring your own router (including Go 1.22+), middleware, and logging/metrics
-  - Extensible OpenAPI & JSON Schema layer to document existing routes
-- A modern REST or HTTP RPC API backend framework for Go developers
-  - Described by [OpenAPI 3.1](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.1.0.md) & [JSON Schema](https://json-schema.org/)
-- Guard rails to prevent common mistakes
-- Documentation that can't get out of date
-- High-quality generated developer tooling
+Oneiros
 
 Features include:
 

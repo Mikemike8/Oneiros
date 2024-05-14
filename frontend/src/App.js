@@ -30,6 +30,7 @@ function App() {
    </Button> {/* Added onClick handler */}
 
    <LoginButton></LoginButton>
+   <LogoutButton></LogoutButton>
    
 
     <Button>Sign  In</Button>
