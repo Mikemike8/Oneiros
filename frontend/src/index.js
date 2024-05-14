@@ -12,8 +12,4 @@ root.render(
   >
     <App />
   </Auth0Provider>
-<<<<<<< Updated upstream
 );
-=======
-);
->>>>>>> Stashed changes
