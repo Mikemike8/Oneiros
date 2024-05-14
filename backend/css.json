@@ -1,0 +1,16 @@
+{
+    "Links": [
+        {
+            "link": "https://www.w3schools.com/css/default.asp",
+            "title": "Css Tutorial"
+        },
+        {
+            "link": "https://www.w3schools.com/css/css_syntax.asp",
+            "title": "Css Syntax"
+        },
+        {
+            "link": "https://www.w3schools.com/css/css_selectors.asp",
+            "title": "Css Selectors"
+        }
+    ]
+}

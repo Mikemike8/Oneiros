@@ -1,8 +1,16 @@
 {
     "Links": [
         {
-            "link": "link here",
-            "title": "title here"
+            "link": "https://www.w3schools.com/cpp/default.asp",
+            "title": "C++ Tutorial"
+        },
+        {
+            "link": "https://www.w3schools.com/cpp/cpp_getstarted.asp",
+            "title": "C++ Getting Started"
+        },
+        {
+            "link": "https://www.w3schools.com/cpp/cpp_syntax.asp",
+            "title": "C++ Syntax"
         }
     ]
 }
