@@ -8,6 +8,9 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import Navbar from 'react-bootstrap/Navbar'; // Fixed import
 import Form from 'react-bootstrap/Form'; // Fixed import
 import { Row, Col } from 'react-bootstrap'; // Added import for Row and Col
+import LoginButton from './LoginButton/Login';
+import LogoutButton from './LoginButton/Logout';
+import { useAuth0 } from "@auth0/auth0-react";
 
 function App() {
   const [show, setShow] = useState(false);
@@ -25,6 +28,9 @@ function App() {
       <Navbar className="bg-body-tertiary justify-content-between">
         <Button variant="primary" onClick={handleShow}>Resource Bar
    </Button> {/* Added onClick handler */}
+
+   <LoginButton></LoginButton>
+   
 
     <Button>Sign  In</Button>
       
