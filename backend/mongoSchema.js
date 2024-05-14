@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
 
 const Python = new mongoose.Schema({
-    "link": String
+    "link": String,
+    "title": String
 });
 
 const mongModelPy = new mongoose.model("python", Python);
