@@ -11,6 +11,7 @@ import { Row, Col } from 'react-bootstrap'; // Added import for Row and Col
 import LoginButton from './LoginButton/Login';
 import LogoutButton from './LoginButton/Logout';
 import { useAuth0 } from "@auth0/auth0-react";
+import Profile from './LoginButton/profile';
 
 function App() {
   const [show, setShow] = useState(false);
@@ -31,6 +32,8 @@ function App() {
 
    <LoginButton></LoginButton>
    <LogoutButton></LogoutButton>
+
+   <Profile></Profile>
    
 
     <Button>Sign  In</Button>
