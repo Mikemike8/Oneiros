@@ -1,11 +1,12 @@
 # Oneiros
 <a href="#">
-	<picture>
-		<source media="(prefers-color-scheme: dark)" srcset="https://huma.rocks/huma-dark.png" />
-		<source media="(prefers-color-scheme: light)" srcset="https://huma.rocks/huma.png" />
-		<img alt="Huma Logo" src="https://www.bing.com/images/search?view=detailV2&ccid=BMBfxitD&id=49B6699FFAD5D6B23BAE6C98F53D63D0168EC06D&thid=OIP.BMBfxitDxG5P99-PzMwZTQAAAA&mediaurl=https%3a%2f%2fimagecdn.mightycause.com%2fc5bd44a1-937f-4563-89d5-a03282629fac%2f-%2fresize%2f200x200%2f&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.04c05fc62b43c46e4ff7df8fcccc194d%3frik%3dbcCOFtBjPfWYbA%26pid%3dImgRaw%26r%3d0&exph=200&expw=200&q=codecrew+logo&simid=608050559653123300&FORM=IRPRST&ck=35AC1FC2ABD2CE2E7A163C51068099F2&selectedIndex=0&itb=0&ajaxhist=0&ajaxserp=0" />
-	</picture>
+    <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://memphishack.com/sponsor-images/codecrew.png" />
+        <source media="(prefers-color-scheme: light)" srcset="https://memphishack.com/sponsor-images/codecrew.png" />
+        <img alt="Huma Logo" src="https://memphishack.com/sponsor-images/codecrew.png" />
+    </picture>
 </a>
+
 
 [![HUMA Powered](https://img.shields.io/badge/Powered%20By-HUMA-f40273)](https://huma.rocks/) [![CI](https://github.com/danielgtaylor/huma/workflows/CI/badge.svg?branch=main)](https://github.com/danielgtaylor/huma/actions?query=workflow%3ACI+branch%3Amain++) [![codecov](https://codecov.io/gh/danielgtaylor/huma/branch/main/graph/badge.svg)](https://codecov.io/gh/danielgtaylor/huma) [![Docs](https://godoc.org/github.com/danielgtaylor/huma/v2?status.svg)](https://pkg.go.dev/github.com/danielgtaylor/huma/v2?tab=doc) [![Go Report Card](https://goreportcard.com/badge/github.com/danielgtaylor/huma/v2)](https://goreportcard.com/report/github.com/danielgtaylor/huma/v2)
 
