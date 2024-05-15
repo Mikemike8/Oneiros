@@ -16,19 +16,11 @@ Our mission is simple: to make learning to code easier, more enjoyable, and acce
 Thank you for joining us on this exciting adventure!
           </p>
         </div>
-        <div className="footer-middle">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/contact">Contact</a></li>
-          </ul>
-        </div>
+        
         <div className="footer-right">
           <h3>Contact Us</h3>
           <p>
-            Address: 123 Coding Street, Memphis,TN <br />
+            Address: 123 Coding Street, Memphis, TN <br />
             Phone: +123 456 7890<br />
             Email: info@example.com
           </p>
