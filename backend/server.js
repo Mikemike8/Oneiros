@@ -29,12 +29,10 @@ function getLinks(json) {
     console.log("getLinks function ran.");
 };
 
-async function sending(Schema) {
-    let storedData = await Schema.find();
-    res.status(200).json(storedData);
-    res.send(storedData);
+async function sending(Schema, resp) {
+    storedData = await Schema.find();
+    resp.status(200).json(storedData);
 };
-
 
 //POST route only used for pushing data into the db.
 app.post('/post', async (req, res) => {
@@ -71,7 +69,8 @@ app.get('/python', async (req, res) => { //✔️
 
 app.get('/webdev', async (req, res) => { //✔️
     try {
-        await mongoose.connect(uri).then(sending(webData));
+        await mongoose.connect(uri)
+        .then(sending(webData));
     } catch(e) {
         console.log("Error GETting data.");
         console.log(e);
@@ -97,18 +96,20 @@ app.get('/gamedev', async (req, res) => { //✔️
 
 app.get('/', async (req, res) => { //✔️
     try {
-        await mongoose.connect(uri).then(sending(jsData));
-        // let storedData = await jsData.find();
+        let storedData;
+        await mongoose.connect(uri)
+        .then(sending(jsData, res));
+        // storedData = await jsData.find();
         // res.status(200).json(storedData);
-        // res.send(storedData);
     } catch(e) {
         console.log("Error GETting data.");
         console.log(e);
         res.status(500).json({ e: "Internal Server Error" });
-    } finally {
-        await mongoose.disconnect();
-        console.log("Route closed. Thank you for the request.");
     }
+    // finally {
+    //     await mongoose.disconnect();
+    //     console.log("Route closed. Thank you for the request.");
+    // }
 });
 
 app.get('/cPlusPlusDev', async (req, res) => { //✔️
