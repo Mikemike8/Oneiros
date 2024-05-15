@@ -9,7 +9,7 @@ function Footer() {
           <p>
           We are a passionate team of five individuals with a shared love for coding and a vision to make learning resources more accessible. Our journey began with the realization that finding quality coding materials and resources can be challenging, especially for beginners.
 
-Driven by our collective passion for coding and education, we decided to do something about it. Drawing from our diverse backgrounds in software development, design, and education, we came together to create [Website Name], a platform dedicated to providing easy access to coding resources and materials.
+Driven by our collective passion for coding and education, we decided to do something about it. Drawing from our diverse backgrounds in software development, design, and education, we came together to create *Oneiros* , a platform dedicated to providing easy access to coding resources and materials.
 
 Our mission is simple: to make learning to code easier, more enjoyable, and accessible to everyone. Whether you're just starting your coding journey or looking to expand your skills, we're here to help you every step of the way.
 
