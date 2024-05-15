@@ -29,6 +29,12 @@ function getLinks(json) {
     console.log("getLinks function ran.");
 };
 
+async function sending(Schema) {
+    let storedData = await Schema.find();
+    res.status(200).json(storedData);
+    res.send(storedData);
+};
+
 
 //POST route only used for pushing data into the db.
 app.post('/post', async (req, res) => {
@@ -52,9 +58,7 @@ app.post('/post', async (req, res) => {
 //GET routes are for the front-end to recieve data.
 app.get('/python', async (req, res) => { //✔️
     try {
-        await mongoose.connect(uri);
-        let storedData = await mongModelPython.find();
-        res.status(200).json(storedData);
+        await mongoose.connect(uri).then(sending(mongModelPython));
     } catch(e) {
         console.log("Error GETting data.");
         console.log(e);
@@ -67,9 +71,7 @@ app.get('/python', async (req, res) => { //✔️
 
 app.get('/webdev', async (req, res) => { //✔️
     try {
-        await mongoose.connect(uri);
-        let storedData = await webData.find();
-        res.status(200).json(storedData);
+        await mongoose.connect(uri).then(sending(webData));
     } catch(e) {
         console.log("Error GETting data.");
         console.log(e);
@@ -82,9 +84,7 @@ app.get('/webdev', async (req, res) => { //✔️
 
 app.get('/gamedev', async (req, res) => { //✔️
     try {
-        await mongoose.connect(uri);
-        let storedData = await gameSchema.find();
-        res.status(200).json(storedData);
+        await mongoose.connect(uri).then(sending(gameSchema));
     } catch(e) {
         console.log("Error GETting data.");
         console.log(e);
@@ -97,10 +97,10 @@ app.get('/gamedev', async (req, res) => { //✔️
 
 app.get('/', async (req, res) => { //✔️
     try {
-        await mongoose.connect(uri);
-        let storedData = await jsData.find();
-        res.status(200).json(storedData);
-        res.send(storedData);
+        await mongoose.connect(uri).then(sending(jsData));
+        // let storedData = await jsData.find();
+        // res.status(200).json(storedData);
+        // res.send(storedData);
     } catch(e) {
         console.log("Error GETting data.");
         console.log(e);
@@ -113,9 +113,7 @@ app.get('/', async (req, res) => { //✔️
 
 app.get('/cPlusPlusDev', async (req, res) => { //✔️
     try {
-        await mongoose.connect(uri);
-        let storedData = await cPlusData.find();
-        res.status(200).json(storedData);
+        await mongoose.connect(uri).then(sending(cPlusData));
     } catch(e) {
         console.log("Error GETting data.");
         console.log(e);
@@ -128,9 +126,7 @@ app.get('/cPlusPlusDev', async (req, res) => { //✔️
 
 app.get('/css', async (req, res) => { //✔️
     try {
-        await mongoose.connect(uri);
-        let storedData = await cssData.find();
-        res.status(200).json(storedData);
+        await mongoose.connect(uri).then(sending(cssData));
     } catch(e) {
         console.log("Error GETting data.");
         console.log(e);
