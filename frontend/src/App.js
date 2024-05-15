@@ -12,6 +12,7 @@ import LoginButton from './LoginButton/Login';
 import LogoutButton from './LoginButton/Logout';
 import { useAuth0 } from "@auth0/auth0-react";
 import Profile from './LoginButton/profile';
+import Footer from "./footer";
 
 function App() {
   const [show, setShow] = useState(false);
@@ -250,6 +251,7 @@ function App() {
           {renderImageList()}
         </Offcanvas.Body>
       </Offcanvas>
+      <Footer />
     </div>
   );
 }

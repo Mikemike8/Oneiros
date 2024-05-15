@@ -1,0 +1,56 @@
+{
+    "Links": [
+        {
+            "link": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/",
+            "title": "Learn JS Data structures & Algorithims"
+        },
+        {
+            "link": "https://www.codecademy.com/enrolled/courses/introduction-to-javascript",
+            "title": "Codecademy learn JS"
+        },
+        {
+            "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+            "title": "MDN web docs"
+        },
+        {
+            "link": "https://www.w3schools.com/js/default.asp",
+            "title": "w3 schools"
+        },
+        {
+            "link": "https://www.youtube.com/watch?v=EerdGm-ehJQ",
+            "title": "Learn JS full course freecodecamp"
+        },
+        {
+            "link": "https://javascript30.com/",
+            "title": "JS 30"
+        },
+        {
+            "link": "https://www.educative.io/courses/learn-html-css-javascript-from-scratch",
+            "title": "Educative learn JS"
+        },
+        {
+            "link": "https://javascript.info/",
+            "title": "Modern JS tutorial"
+        },
+        {
+            "link": "",
+            "title": ""
+        },
+        {
+            "link": "",
+            "title": ""
+        },
+        {
+            "link": "",
+            "title": ""
+        },
+        {
+            "link": "",
+            "title": ""
+        },
+        {
+            "link": "",
+            "title": ""
+        }
+    ]
+}
