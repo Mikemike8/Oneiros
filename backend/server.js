@@ -95,7 +95,7 @@ app.get('/gamedev', async (req, res) => { //✔️
     }
 });
 
-app.get('/jsDev', async (req, res) => { //✔️
+app.get('/', async (req, res) => { //✔️
     try {
         await mongoose.connect(uri);
         let storedData = await jsData.find();
