@@ -9,6 +9,9 @@ const cors = require("cors");
 const mongModelPython = require("./mongoSchema");
 const webData = require("./webdevSchema");
 const gameSchema = require("./gameSchema");
+const jsData = require("./jsSchema") 
+const cPlusData = require("./c++Schema");
+const cssData = require("./cssSchema");
 
 //Global variables
 const app = express();
@@ -33,7 +36,7 @@ app.post('/post', async (req, res) => {
         let storedData = []
         await mongoose.connect(uri);
         for (let i = 0; i < arr.length; i++) {    
-            storedData.push(await gameSchema.create(arr[i]));
+            storedData.push(await cssData.create(arr[i]));
         }
         res.status(200).json(storedData);
     } catch (e) {
@@ -47,7 +50,7 @@ app.post('/post', async (req, res) => {
 });
 
 //GET routes are for the front-end to recieve data.
-app.get('/python', async (req, res) => {
+app.get('/python', async (req, res) => { //✔️
     try {
         await mongoose.connect(uri);
         let storedData = await mongModelPython.find();
@@ -62,7 +65,7 @@ app.get('/python', async (req, res) => {
     }
 });
 
-app.get('/webdev', async (req, res) => {
+app.get('/webdev', async (req, res) => { //✔️
     try {
         await mongoose.connect(uri);
         let storedData = await webData.find();
@@ -77,7 +80,67 @@ app.get('/webdev', async (req, res) => {
     }
 });
 
+app.get('/gamedev', async (req, res) => { //✔️
+    try {
+        await mongoose.connect(uri);
+        let storedData = await gameSchema.find();
+        res.status(200).json(storedData);
+    } catch(e) {
+        console.log("Error GETting data.");
+        console.log(e);
+        res.status(500).json({ e: "Internal Server Error" });
+    } finally {
+        await mongoose.disconnect();
+        console.log("Route closed. Thank you for the request.");
+    }
+});
+
+app.get('/jsDev', async (req, res) => { //✔️
+    try {
+        await mongoose.connect(uri);
+        let storedData = await jsData.find();
+        res.status(200).json(storedData);
+    } catch(e) {
+        console.log("Error GETting data.");
+        console.log(e);
+        res.status(500).json({ e: "Internal Server Error" });
+    } finally {
+        await mongoose.disconnect();
+        console.log("Route closed. Thank you for the request.");
+    }
+});
+
+app.get('/cPlusPlusDev', async (req, res) => { //✔️
+    try {
+        await mongoose.connect(uri);
+        let storedData = await cPlusData.find();
+        res.status(200).json(storedData);
+    } catch(e) {
+        console.log("Error GETting data.");
+        console.log(e);
+        res.status(500).json({ e: "Internal Server Error" });
+    } finally {
+        await mongoose.disconnect();
+        console.log("Route closed. Thank you for the request.");
+    }
+});
+
+app.get('/css', async (req, res) => { //✔️
+    try {
+        await mongoose.connect(uri);
+        let storedData = await cssData.find();
+        res.status(200).json(storedData);
+    } catch(e) {
+        console.log("Error GETting data.");
+        console.log(e);
+        res.status(500).json({ e: "Internal Server Error" });
+    } finally {
+        await mongoose.disconnect();
+        console.log("Route closed. Thank you for the request.");
+    }
+});
+
 app.listen(PORT, () => {
-    //getLinks(gameData);
+    //getLinks(cssJson);
     console.log(`Server is running on port ${PORT}`);
 });
