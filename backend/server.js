@@ -99,7 +99,8 @@ app.get('/', async (req, res) => { //✔️
     try {
         await mongoose.connect(uri);
         let storedData = await jsData.find();
-        res.send(res.status(200).json(storedData));
+        res.status(200).json(storedData);
+        res.send(storedData);
     } catch(e) {
         console.log("Error GETting data.");
         console.log(e);
