@@ -8,14 +8,10 @@ const Hero = () => {
         <div className="container grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="text-white space-y-4 lg:pr-36">
             <h1 data-aos="fade-up" className="text-5xl font-bold">
-              ORBIT THE EARTH
+              WELCOME TO THE HUB
             </h1>
             <p data-aos="fade-up" data-aos-delay="300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ea
-              dolorem eius accusamus beatae. Nulla quis beatae quo, possimus
-              tempora similique dignissimos repellat aperiam veniam culpa
-              consequatur repudiandae asperiores saepe.
-            </p>
+            CodeHub is a platform merging essential resources for software development, including MDN, W3Schools, and Stack Overflow, with a built-in AI tool. This unique blend ensures developers have access to comprehensive documentation, tutorials, and community support in one place. The AI tool boosts productivity by providing intelligent code suggestions, debugging assistance, and personalized learning paths. It's an unmatched environment for both beginners and seasoned developers alike.            </p>
             <button
               data-aos="fade-up"
               data-aos-delay="500"

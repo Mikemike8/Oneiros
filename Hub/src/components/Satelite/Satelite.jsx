@@ -20,30 +20,21 @@ const Rapidscat = () => {
                 data-aos-delay="500"
                 className="uppercase text-5xl"
               >
-                Rapidscat
+                Codecademy
               </h1>
               <p data-aos="fade-up" data-aos-delay="700">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-                molestiae reprehenderit expedita corporis, non doloremque.
-                Consequatur consectetur quisquam qui sunt. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Eos molestiae reprehenderit
-                expedita corporis, non doloremque. Consequatur consectetur
-                quisquam qui sunt.
+              Codecademy's "Learn JavaScript" course offers a beginner-friendly journey into the language, covering key concepts through interactive lessons, exercises, and projects. With its hands-on approach and structured curriculum, learners gain practical skills for web development, from basic JavaScript syntax to more advanced topics, empowering them to create dynamic and interactive websites and applications.
               </p>
               <button
                 data-aos="fade-up"
                 data-aos-delay="900"
                 className="bg-blue-400 text-white hover:bg-blue-500 px-4 py-1 rounded-md duration-200"
               >
-                View All
+                <a href="https://www.codecademy.com/enrolled/courses/introduction-to-javascript">View All</a>
               </button>
             </div>
             <div data-aos="zoom-in">
-              <img
-                src={satelitImg}
-                alt=""
-                className="w-full sm:w-[80%] mx-auto max-h-[350px] object-cover"
-              />
+            <iframe width="350" height="250" src="https://www.youtube.com/embed/uh4gG7LbDPQ?si=IC5SwO8dKbFdw6pc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" className="w-full sm:w-[80%] mx-auto max-h-[350px] object-cover" allowfullscreen></iframe>
             </div>
           </div>
         </div>
