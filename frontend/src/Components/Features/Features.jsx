@@ -5,30 +5,30 @@ import { SlNote } from "react-icons/sl";
 
 const FeaturesData = [
   {
-    name: "Captivating Videos",
+    name: "Captivating Videos and Lectures",
     icon: (
       <FaCameraRetro className="text-5xl text-primary group-hover:text-black duration-300" />
     ),
     link: "#",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    description: "Our platform offers captivating videos and lectures, making it the ideal choice for your coding journey.",
     aosDelay: "300",
   },
   {
-    name: "Safe Transactions",
+    name: "Reliable Sources",
     icon: (
       <GiNotebook className="text-5xl text-primary group-hover:text-black duration-300" />
     ),
     link: "#",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    description: "Explore a wealth of reliable sources meticulously curated within our platform, ensuring unparalleled access to trusted and vetted information for your coding endeavors.",
     aosDelay: "500",
   },
   {
-    name: "Experience Reality",
+    name: "Experience Cutting Edge Ai Tools",
     icon: (
       <SlNote className="text-5xl text-primary group-hover:text-black duration-500" />
     ),
     link: "#",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    description: "Experience cutting-edge AI tools integrated seamlessly into our platform, enhancing your coding experience like never before.",
     aosDelay: "700",
   },
 ];

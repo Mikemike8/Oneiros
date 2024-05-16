@@ -40,8 +40,9 @@ const Navbar = () => {
           <div className="flex items-center gap-3">
             <img src={Logo} alt="" className="h-16" />
             <p className="text-3xl">
-              VR <span className="font-bold">World</span>
-            </p>
+  CODE <span className="font-bold text-yellow-200 hover:text-yellow-300 hover:shadow-md">HUB</span>
+</p>
+
           </div>
           <LoginButton></LoginButton>
           <LogoutButton></LogoutButton>

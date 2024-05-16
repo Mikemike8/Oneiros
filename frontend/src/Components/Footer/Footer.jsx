@@ -37,8 +37,7 @@ const Footer = () => {
                 Metaverse
               </h1>
               <p className="text-sm">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Repellat dolor illum a aut iste expedita.
+              Discover a curated selection of Metaverse Links, offering access to cutting-edge virtual environments and emerging technologies, redefining the landscape of digital interaction.
               </p>
               <br />
 
@@ -46,7 +45,7 @@ const Footer = () => {
               <div>
                 <div className="flex items-center gap-3">
                   <FaLocationArrow />
-                  <p>Noida, Uttar Pradesh</p>
+                  <p>United States, Tennesse</p>
                 </div>
                 <div className="flex items-center gap-3">
                   <FaMobileAlt />

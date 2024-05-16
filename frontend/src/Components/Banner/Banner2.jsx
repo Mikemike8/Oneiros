@@ -15,16 +15,13 @@ const Banner2 = ({ togglePlay }) => {
                 data-aos-delay="300"
                 className="text-4xl font-semibold"
               >
-                GET READY TO ENJ0Y VR{" "}
+                NO MORE TABS ALL OVER THE PLACE ALL  {" "}
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
-                  Movies WITH OUR PLATFORM
+                  OF THE BEST SOURCES ARE GATHER FOR YOU!
                 </span>
               </h1>
               <p data-aos="fade-up" data-aos-delay="500">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab
-                molestias quia exercitationem ex inventore labore beatae cumque
-                et quaerat voluptas?
-              </p>
+Welcome to our platform, the ultimate destination for developers! We've revolutionized the way developers access information by gathering all the popular sources from developer forums into one centralized hub. Say goodbye to endless searches across multiple platforms—we've streamlined the process to provide you with instant access to the most relevant and up-to-date content. From tutorials and code snippets to discussions and Q&A threads, our platform has it all. But we didn't stop there. We've also integrated cutting-edge chat technology powered by GPT-4 Turbo, allowing you to connect with fellow developers, collaborate on projects, and get real-time assistance whenever you need it. With our platform, you'll never feel alone on your coding journey again. Join us today and experience the future of developer communities!</p>
               <div className="flex gap-6">
                 <button
                   data-aos="fade-up"

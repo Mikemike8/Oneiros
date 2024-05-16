@@ -19,16 +19,15 @@ const Banner = ({ togglePlay }) => {
                 data-aos-delay="300"
                 className="text-4xl font-semibold"
               >
-                GET READY TO ENJ0Y VR{" "}
+                GET READY TO ENJ0Y SOME CS50 LECTURES{" "}
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
-                  Movies WITH OUR PLATFORM
+                  AND PODCASTS WITH OUR PLATFORM
                 </span>
               </h1>
               <p data-aos="fade-up" data-aos-delay="500">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab
-                molestias quia exercitationem ex inventore labore beatae cumque
-                et quaerat voluptas?
-              </p>
+              Get ready to immerse yourself in a world of coding knowledge and inspiration with our curated selection of lectures and podcasts. Whether you're a seasoned developer or just starting your coding journey, our platform offers a diverse range of content to suit your interests and skill level. Tune in to engaging lectures delivered by industry experts, covering topics ranging from advanced programming techniques to emerging technologies. Dive into thought-provoking podcasts that explore the latest trends, share valuable insights, and offer practical advice for navigating the ever-evolving landscape of software development. With our platform, you'll have everything you need to stay informed, inspired, and ready to take your coding skills to the next level.
+
+</p>
               <div className="flex gap-6">
                 <button
                   data-aos="fade-up"
