@@ -9,7 +9,7 @@ const NavLinks = [
   {
     id: 1,
     name: "Home",
-    link: "#",
+    link: "https://oneiros-uq26.onrender.com/",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const NavLinks = [
   {
     id: 3,
     name: "HUB",
-    link: "http://localhost:5178/",
+    link: "https://the-hub-yzqt.onrender.com/",
   },
   {
     id: 4,

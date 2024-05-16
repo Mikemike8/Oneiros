@@ -1,35 +1,32 @@
-import React from "react";
+import React, { useEffect } from "react";
 import wave from "../../assets/wave Gif.gif";
 import { FaReact } from "react-icons/fa";
 import { FaShuttleSpace, FaSpaceAwesome } from "react-icons/fa6";
+import axios from "axios";
+import { useState } from "react";
 
-const ServiceData = [
-  {
-    title: "HST",
-    content: "300-1500km",
-    description:
-      "Used for astronomical observations, capturing stunning images of the universe.",
-    icon: <FaReact className="text-7xl" />,
-    aosDelay: "300",
-  },
-  {
-    title: "ISS",
-    content: "500-1500km",
-    description:
-      ", it's a habitable artificial satellite orbiting Earth and serves as a space environment research laboratory",
-    icon: <FaShuttleSpace className="text-7xl" />,
-    aosDelay: "500",
-  },
-  {
-    title: "GPS",
-    content: "300-1500km",
-    description:
-      "Part of the Global Positioning System (GPS) used for navigation.",
+const HeroCard = () => {
+  const [links, setLinks] = useState([]);
+  useEffect(()=>{
+    axios.get("https://oneiros-branch.onrender.com/")
+    .then(res => {
+      console.log("res", res)
+      let axiosData = res.data;
+      setLinks(axiosData);
+    });
+  }, [])
+
+const ServiceData = links.map((data, index)=>{
+  return   {
+    title: data.title,
+    description: data.link,
     icon: <FaSpaceAwesome className="text-7xl" />,
     aosDelay: "700",
-  },
-];
-const HeroCard = () => {
+  }
+})
+
+  
+
   return (
     <>
       <section className="bg-primary">
@@ -46,8 +43,7 @@ const HeroCard = () => {
                     >
                       {data.icon}
                       <h1>{data.title}</h1>
-                      <p>{data.content}</p>
-                      <p className="text-sm">{data.description}</p>
+                      <a className="text-sm" href={data.description}>{data.title}</a>
                     </div>
                   );
                 })}

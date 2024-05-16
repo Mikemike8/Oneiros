@@ -40,7 +40,7 @@ app.post('/post', async (req, res) => {
         let storedData = []
         await mongoose.connect(uri);
         for (let i = 0; i < arr.length; i++) {    
-            storedData.push(await cssData.create(arr[i]));
+            storedData.push(await jsData.create(arr[i]));
         }
         res.status(200).json(storedData);
     } catch (e) {
@@ -118,6 +118,6 @@ app.get('/css', async (req, res) => { //✔️
 });
 
 app.listen(PORT, () => {
-    //getLinks(cssJson);
+    //getLinks(jsJson);
     console.log(`http://localhost:${PORT}`);
 });
