@@ -14,12 +14,16 @@ const NavLinks = [
   },
   {
     id: 2,
-    name: "Products",
+    name: "Onerios",
+    link: "https://youai.ai/ais/04f072b5-d4b3-4fea-9b6c-ffb4b87b73d1/use",
+  },{
+    id: 3,
+    name: "Programs",
     link: "#",
   },
   {
-    id: 3,
-    name: "Pricing",
+    id: 4,
+    name: "Creators",
     link: "#",
   },
   {
@@ -44,8 +48,7 @@ const Navbar = () => {
 </p>
 
           </div>
-          <LoginButton></LoginButton>
-          <LogoutButton></LogoutButton>
+          
           {/* Desktop Menu section */}
           <nav className="hidden md:block">
             <ul className="flex items-center gap-8">
@@ -58,12 +61,16 @@ const Navbar = () => {
                     >
                       {name}
                     </a>
+                    
                   </li>
                 );
               })}
+              <LoginButton></LoginButton>
+          <LogoutButton></LogoutButton>
               {/* Darkmode feature */}
               <DarkMode />
             </ul>
+            
           </nav>
 
           {/* Mobile View Sidebar */}

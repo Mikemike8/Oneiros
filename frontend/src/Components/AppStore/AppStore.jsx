@@ -18,8 +18,7 @@ const AppStore = () => {
             data-aos-delay="300"
             className="text-center sm:px-20"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-            magnam harum accusantium odit?
+            Begin your journey with our apps by seamlessly diving into a user-friendly interface designed for effortless navigation and optimal functionality.
           </p>
           <div className="flex flex-wrap justify-center gap-4 items-center">
             <a href="#" data-aos="fade-up" data-aos-delay="500">

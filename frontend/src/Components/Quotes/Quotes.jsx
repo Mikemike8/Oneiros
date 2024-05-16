@@ -8,7 +8,7 @@ const Quotes = () => {
           data-aos="zoom-in"
           className="text-2xl sm:text-4xl font-bold max-w-[650px] mx-auto text-center font-parisienne"
         >
-          "AI 🤖 reality is a the future, a means by which humans can get ideas
+          "AI 🤖  is a the future, a means by which humans can get ideas
           and experiences faster."
         </h1>
       </div>
