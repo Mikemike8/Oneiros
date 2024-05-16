@@ -2,6 +2,9 @@
 import Logo from "../../assets/logo.png";
 import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
 import DarkMode from "./DarkMode";
+import LoginButton from "../../../Authzero/Login";
+import LogoutButton from "../../../Authzero/Logout";
+
 
 const NavLinks = [
   {
@@ -25,6 +28,7 @@ const NavLinks = [
     link: "#",
   },
 ]             ;
+
 const Navbar = () => {
   const [showMenu, setShowMenu] = React.useState(false);
   const toggleMenu = () => setShowMenu(!showMenu);
@@ -39,6 +43,8 @@ const Navbar = () => {
               VR <span className="font-bold">World</span>
             </p>
           </div>
+          <LoginButton></LoginButton>
+          <LogoutButton></LogoutButton>
           {/* Desktop Menu section */}
           <nav className="hidden md:block">
             <ul className="flex items-center gap-8">

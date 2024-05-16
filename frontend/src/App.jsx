@@ -34,8 +34,6 @@ const App = () => {
   return (
     <main className="overflow-x-hidden bg-white dark:bg-black text-black dark:text-white duration-300">
       <Navbar />
-      <LoginButton></LoginButton>
-      <LogoutButton></LogoutButton>
       <Hero togglePlay={togglePlay} />
       <Quotes />
       <Banner togglePlay={togglePlay} />
