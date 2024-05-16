@@ -37,15 +37,15 @@ const HeroCard = () => {
   const [links, setLinks] = useState();
 
   axios.get("https://oneiros-branch.onrender.com/")
-.then(res => {
-  let axiosData = res.data.Links;
-  let arr = [];
-  console.log(axiosData);
-  for(let i = 0; i < axiosData.length; i++) {
-    arr.push(axiosData[i]);
-  };
-  setLinks(arr);
-});
+  .then(res => {
+    let axiosData = res.data.Links;
+    let arr = [];
+    console.log(axiosData);
+    for(let i = 0; i < axiosData.length; i++) {
+      arr.push(axiosData[i]);
+    };
+    setLinks(arr);
+  });
 
   return (
     <>
@@ -64,7 +64,7 @@ const HeroCard = () => {
                       {data.icon}
                       <h1>{data.title}</h1>
                       <p>{data.content}</p>
-                      <p className="text-sm">{data.description}</p>
+                      <p className="text-sm">{links[0].link}</p>
                     </div>
                   );
                 })}
