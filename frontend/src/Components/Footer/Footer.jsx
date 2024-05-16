@@ -60,7 +60,7 @@ Thank you for joining us on this exciting adventure!
                 </div>
                 <div className="flex items-center gap-3">
                   <FaMobileAlt />
-                  <p>+1 800 Choke Dat 403</p>
+                  <p>+1 800 123-4567</p>
                 </div>
               </div>
 
