@@ -5,9 +5,38 @@ import { FaShuttleSpace, FaSpaceAwesome } from "react-icons/fa6";
 import axios from "axios";
 import { useState } from "react";
 
-const [links, setLinks] = useState();
 
-axios.get("https://oneiros-branch.onrender.com/")
+const ServiceData = [
+  {
+    title: "JavaScript",
+    content: `test`,
+    description:
+      `test`,
+    icon: <FaReact className="text-7xl" />,
+    aosDelay: "300",
+  },
+  {
+    title: "JavaScript",
+    content: `test`,
+    description:
+    `test`,
+    icon: <FaShuttleSpace className="text-7xl" />,
+    aosDelay: "500",
+  },
+  {
+    title: "JavaScript",
+    content: `test`,
+    description:
+    `test`,
+    icon: <FaSpaceAwesome className="text-7xl" />,
+    aosDelay: "700",
+  }
+];
+
+const HeroCard = () => {
+  const [links, setLinks] = useState();
+
+  axios.get("https://oneiros-branch.onrender.com/")
 .then(res => {
   let axiosData = res.data.Links;
   let arr = [];
@@ -18,33 +47,6 @@ axios.get("https://oneiros-branch.onrender.com/")
   setLinks(arr);
 });
 
-const ServiceData = [
-  {
-    title: "JavaScript",
-    content: `${links[15].title}`,
-    description:
-      `${links[15].link}`,
-    icon: <FaReact className="text-7xl" />,
-    aosDelay: "300",
-  },
-  {
-    title: "JavaScript",
-    content: `${links[16].title}`,
-    description:
-    `${links[16].link}`,
-    icon: <FaShuttleSpace className="text-7xl" />,
-    aosDelay: "500",
-  },
-  {
-    title: "JavaScript",
-    content: `${links[17].title}`,
-    description:
-    `${links[17].link}`,
-    icon: <FaSpaceAwesome className="text-7xl" />,
-    aosDelay: "700",
-  },
-];
-const HeroCard = () => {
   return (
     <>
       <section className="bg-primary">
