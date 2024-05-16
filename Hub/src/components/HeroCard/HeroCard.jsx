@@ -3,34 +3,43 @@ import wave from "../../assets/wave Gif.gif";
 import { FaReact } from "react-icons/fa";
 import { FaShuttleSpace, FaSpaceAwesome } from "react-icons/fa6";
 import axios from "axios";
+import { useState } from "react";
+
+const [links, setLinks] = useState();
 
 axios.get("https://oneiros-branch.onrender.com/")
 .then(res => {
-  console.log(res.data);
+  let axiosData = res.data.Links;
+  let arr = [];
+  console.log(axiosData);
+  for(let i = 0; i < axiosData.length; i++) {
+    arr.push(axiosData[i]);
+  };
+  setLinks(arr);
 });
 
 const ServiceData = [
   {
-    title: "HST",
-    content: "300-1500km",
+    title: "JavaScript",
+    content: `${links[15].title}`,
     description:
-      "Used for astronomical observations, capturing stunning images of the universe.",
+      `${links[15].link}`,
     icon: <FaReact className="text-7xl" />,
     aosDelay: "300",
   },
   {
-    title: "ISS",
-    content: "500-1500km",
+    title: "JavaScript",
+    content: `${links[16].title}`,
     description:
-      ", it's a habitable artificial satellite orbiting Earth and serves as a space environment research laboratory",
+    `${links[16].link}`,
     icon: <FaShuttleSpace className="text-7xl" />,
     aosDelay: "500",
   },
   {
-    title: "GPS",
-    content: "300-1500km",
+    title: "JavaScript",
+    content: `${links[17].title}`,
     description:
-      "Part of the Global Positioning System (GPS) used for navigation.",
+    `${links[17].link}`,
     icon: <FaSpaceAwesome className="text-7xl" />,
     aosDelay: "700",
   },
