@@ -17,7 +17,7 @@ const Navbar = () => {
             <div className="text-white hidden sm:block">
               <ul className="flex items-center gap-6 text-xl py-4 ">
                 <li>
-                  <a href="http://localhost:5175/">Home</a>
+                  <a href="https://oneiros-uq26.onrender.com/">Home</a>
                 </li>
                 <li>
                   <a href="#">Technology</a>
