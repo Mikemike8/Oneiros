@@ -19,7 +19,7 @@ const NavLinks = [
   {
     id: 3,
     name: "HUB",
-    link: "#",
+    link: "http://localhost:5178/",
   },
   {
     id: 4,
