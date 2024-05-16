@@ -33,7 +33,6 @@ Welcome to our platform, the ultimate destination for developers! We've revoluti
                 <button
                   data-aos="fade-up"
                   data-aos-delay="900"
-                  onClick={togglePlay}
                   className="flex items-center gap-2"
                 >
                   {" "}

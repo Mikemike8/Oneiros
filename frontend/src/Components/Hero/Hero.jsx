@@ -30,7 +30,7 @@ const Hero = ({ togglePlay }) => {
                 <button
                   data-aos="fade-up"
                   data-aos-delay="700"
-                  onClick={togglePlay}
+                 
                   className="flex items-center gap-2"
                 >
                   {" "}

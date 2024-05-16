@@ -4,6 +4,7 @@ import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
 import DarkMode from "./DarkMode";
 import LoginButton from "../../../Authzero/Login";
 import LogoutButton from "../../../Authzero/Logout";
+import Profile from "../../../Authzero/Profile";
 
 const NavLinks = [
   {
@@ -71,6 +72,7 @@ const Navbar = () => {
               />
                <LoginButton></LoginButton>
               <LogoutButton></LogoutButton>
+              <Profile></Profile>
               <DarkMode />
             </ul>
           </nav>
