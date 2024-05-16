@@ -149,5 +149,5 @@ app.get('/css', async (req, res) => { //✔️
 
 app.listen(PORT, () => {
     //getLinks(cssJson);
-    console.log(`Server is running on port ${PORT}`);
+    console.log(`http://localhost:${PORT}`);
 });
