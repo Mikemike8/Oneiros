@@ -11,6 +11,8 @@ import PopupPlayer from "./Components/PopupPlayer/PopupPlayer";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import LoginButton from "../Authzero/Login.jsx";
+import LogoutButton from "../Authzero/Logout.jsx";
 
 const App = () => {
   const [isPlay, setIsPlay] = useState(false);
@@ -32,6 +34,8 @@ const App = () => {
   return (
     <main className="overflow-x-hidden bg-white dark:bg-black text-black dark:text-white duration-300">
       <Navbar />
+      <LoginButton></LoginButton>
+      <LogoutButton></LogoutButton>
       <Hero togglePlay={togglePlay} />
       <Quotes />
       <Banner togglePlay={togglePlay} />
