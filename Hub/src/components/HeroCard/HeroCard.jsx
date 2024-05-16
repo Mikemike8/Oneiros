@@ -5,46 +5,48 @@ import { FaShuttleSpace, FaSpaceAwesome } from "react-icons/fa6";
 import axios from "axios";
 import { useState } from "react";
 
-const [links, setLinks] = useState();
-
-axios.get("https://oneiros-branch.onrender.com/")
-.then(res => {
-  let axiosData = res.data.Links;
-  let arr = [];
-  console.log(axiosData);
-  for(let i = 0; i < axiosData.length; i++) {
-    arr.push(axiosData[i]);
-  };
-  setLinks(arr);
-});
 
 const ServiceData = [
   {
     title: "JavaScript",
-    content: `${links[15].title}`,
+    content: `test`,
     description:
-      `${links[15].link}`,
+      `test`,
     icon: <FaReact className="text-7xl" />,
     aosDelay: "300",
   },
   {
     title: "JavaScript",
-    content: `${links[16].title}`,
+    content: `test`,
     description:
-    `${links[16].link}`,
+    `test`,
     icon: <FaShuttleSpace className="text-7xl" />,
     aosDelay: "500",
   },
   {
     title: "JavaScript",
-    content: `${links[17].title}`,
+    content: `test`,
     description:
-    `${links[17].link}`,
+    `test`,
     icon: <FaSpaceAwesome className="text-7xl" />,
     aosDelay: "700",
-  },
+  }
 ];
+
 const HeroCard = () => {
+  const [links, setLinks] = useState();
+
+  axios.get("https://oneiros-branch.onrender.com/")
+  .then(res => {
+    let axiosData = res.data.Links;
+    let arr = [];
+    console.log(axiosData);
+    for(let i = 0; i < axiosData.length; i++) {
+      arr.push(axiosData[i]);
+    };
+    setLinks(arr);
+  });
+
   return (
     <>
       <section className="bg-primary">
@@ -62,7 +64,7 @@ const HeroCard = () => {
                       {data.icon}
                       <h1>{data.title}</h1>
                       <p>{data.content}</p>
-                      <p className="text-sm">{data.description}</p>
+                      <p className="text-sm">{links[0].link}</p>
                     </div>
                   );
                 })}
