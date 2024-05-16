@@ -2,6 +2,12 @@ import React from "react";
 import wave from "../../assets/wave Gif.gif";
 import { FaReact } from "react-icons/fa";
 import { FaShuttleSpace, FaSpaceAwesome } from "react-icons/fa6";
+import axios from "axios";
+
+axios.get("https://oneiros-branch.onrender.com/")
+.then(res => {
+  console.log(res.data);
+});
 
 const ServiceData = [
   {
