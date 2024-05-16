@@ -47,11 +47,7 @@ app.post('/post', async (req, res) => {
         console.log("Error POSTing data.");
         console.log(e);
         res.status(500).json({ e: "Internal Server Error" });
-    } 
-    // finally {
-    //     await mongoose.disconnect();
-    //     console.log("Route closed. Thank you for the request.");
-    // }
+    }
 });
 
 //GET routes are for the front-end to recieve data.
@@ -63,11 +59,7 @@ app.get('/python', async (req, res) => { //✔️
         console.log("Error GETting data.");
         console.log(e);
         res.status(500).json({ e: "Internal Server Error" });
-    } 
-    // finally {
-    //     await mongoose.disconnect();
-    //     console.log("Route closed. Thank you for the request.");
-    // }
+    }
 });
 
 app.get('/webdev', async (req, res) => { //✔️
@@ -78,11 +70,7 @@ app.get('/webdev', async (req, res) => { //✔️
         console.log("Error GETting data.");
         console.log(e);
         res.status(500).json({ e: "Internal Server Error" });
-    } 
-    // finally {
-    //     await mongoose.disconnect();
-    //     console.log("Route closed. Thank you for the request.");
-    // }
+    }
 });
 
 app.get('/gamedev', async (req, res) => { //✔️
@@ -93,28 +81,18 @@ app.get('/gamedev', async (req, res) => { //✔️
         console.log("Error GETting data.");
         console.log(e);
         res.status(500).json({ e: "Internal Server Error" });
-    } 
-    // finally {
-    //     await mongoose.disconnect();
-    //     console.log("Route closed. Thank you for the request.");
-    // }
+    }
 });
 
 app.get('/', async (req, res) => { //✔️
     try {
         let storedData;
         await mongoose.connect(uri).then(sending(jsData, res));
-        // storedData = await jsData.find();
-        // res.status(200).json(storedData);
     } catch(e) {
         console.log("Error GETting data.");
         console.log(e);
         res.status(500).json({ e: "Internal Server Error" });
-    } 
-    // finally {
-    //     await mongoose.disconnect();
-    //     console.log("Route closed. Thank you for the request.");
-    // }
+    }
 });
 
 app.get('/cPlusPlusDev', async (req, res) => { //✔️
@@ -125,11 +103,7 @@ app.get('/cPlusPlusDev', async (req, res) => { //✔️
         console.log("Error GETting data.");
         console.log(e);
         res.status(500).json({ e: "Internal Server Error" });
-    } 
-    // finally {
-    //     await mongoose.disconnect();
-    //     console.log("Route closed. Thank you for the request.");
-    // }
+    }
 });
 
 app.get('/css', async (req, res) => { //✔️
@@ -140,11 +114,7 @@ app.get('/css', async (req, res) => { //✔️
         console.log("Error GETting data.");
         console.log(e);
         res.status(500).json({ e: "Internal Server Error" });
-    } 
-    // finally {
-    //     await mongoose.disconnect();
-    //     console.log("Route closed. Thank you for the request.");
-    // }
+    }
 });
 
 app.listen(PORT, () => {
