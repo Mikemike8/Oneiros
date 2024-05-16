@@ -43,7 +43,7 @@ const ServiceData = links.map((data, index)=>{
                     >
                       {data.icon}
                       <h1>{data.title}</h1>
-                      <a className="text-sm" href={data.description}>{data.description}</a>
+                      <a className="text-sm" href={data.description}>{data.title}</a>
                     </div>
                   );
                 })}
