@@ -131,7 +131,13 @@ Thank you for joining us on this exciting adventure!
                           className="cursor-pointer hover:text-primary"
                         >
                           JR
-                        </a>
+                          </a><br></br>
+                          <a
+                          href="https://github.com/mccantsryan"
+                          className="cursor-pointer hover:text-primary"
+                        >Ryan </a>
+                          
+                        
                         
                     
                   </ul>
@@ -139,22 +145,34 @@ Thank you for joining us on this exciting adventure!
               </div>
               <div>
                 <div className="py-8 px-4">
-                  <h1 className="text-xl font-bold mb-3 ">Location</h1>
-                  <ul className="space-y-3">
-                    {FooterLinks.map((link) => (
-                      <li
-                        key={link.id}
-                        className="hover:translate-x-1 duration-300 "
-                      >
-                        <a
-                          href={link.link}
+                  <h1 className="text-xl font-bold mb-3 ">Locations</h1>
+                    {/* updates to github team */}
+                    <a
+                          href="https://www.google.com/maps/place/Memphis,+TN/@35.1290744,-90.1219215,11z/data=!3m1!4b1!4m6!3m5!1s0x87d57e1eea439745:0xd193f315601ab6fe!8m2!3d35.1495343!4d-90.0489801!16zL20vMGNfbTM?entry=ttu"
                           className="cursor-pointer hover:text-primary"
                         >
-                          {link.title}
+                          Vo
+                        </a><br></br>
+                        <a
+                          href="https://www.google.com/maps/place/Memphis,+TN/@35.1290744,-90.1219215,11z/data=!3m1!4b1!4m6!3m5!1s0x87d57e1eea439745:0xd193f315601ab6fe!8m2!3d35.1495343!4d-90.0489801!16zL20vMGNfbTM?entry=ttu"
+                          className="cursor-pointer hover:text-primary"
+                        >
+                           Michael
+                        </a><br></br>
+                        <a
+                          href="https://www.google.com/maps/place/Memphis,+TN/@35.1290744,-90.1219215,11z/data=!3m1!4b1!4m6!3m5!1s0x87d57e1eea439745:0xd193f315601ab6fe!8m2!3d35.1495343!4d-90.0489801!16zL20vMGNfbTM?entry=ttu"
+                          className="cursor-pointer hover:text-primary"
+                        >
+                          Caleb
+                        </a><br></br>
+                        <a
+                          href="https://www.google.com/maps/place/Memphis,+TN/@35.1290744,-90.1219215,11z/data=!3m1!4b1!4m6!3m5!1s0x87d57e1eea439745:0xd193f315601ab6fe!8m2!3d35.1495343!4d-90.0489801!16zL20vMGNfbTM?entry=ttu"
+                          className="cursor-pointer hover:text-primary"
+                        >
+                          JR
                         </a>
-                      </li>
-                    ))}
-                  </ul>
+                        
+                
                 </div>
               </div>
             </div>
