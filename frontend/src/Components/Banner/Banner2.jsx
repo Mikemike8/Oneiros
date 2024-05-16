@@ -15,9 +15,9 @@ const Banner2 = ({ togglePlay }) => {
                 data-aos-delay="300"
                 className="text-4xl font-semibold"
               >
-                NO MORE TABS ALL OVER THE PLACE ALL  {" "}
+                NO MORE TABS ALL OVER THE PLACE   {" "}
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
-                  OF THE BEST SOURCES ARE GATHER FOR YOU!
+                   AN EASIER LIFE JUST FOR YOU!
                 </span>
               </h1>
               <p data-aos="fade-up" data-aos-delay="500">

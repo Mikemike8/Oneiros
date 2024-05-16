@@ -11,13 +11,13 @@ const Hero = ({ togglePlay }) => {
             {/* hero text section */}
             <div className="order-2 sm:order-1 space-y-5 lg:pr-20 relative z-30">
               <h1 data-aos="fade-up" data className="text-4xl font-semibold">
-                HI IM ONERIOS, READY TO ENJ0Y THE{" "}
+                ONERIOS, A BUILT IN {" "}
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
-                  SOFTWARE DEVELOPER TOOLS  WITH OUR PLATFORM 
+                  CHAT GBT 4 SUPER TURBO AI ENGINEER!
                 </span>
               </h1>
               <p data-aos="fade-up" data-aos-delay="300">
-              Code Hub is the best AI platform  it provides all the essential resources for software development, including MDN, W3Schools, and Stack Overflow, integrated with a built-in AI tool. This combination offers an unparalleled experience for developers, allowing them to access comprehensive documentation, tutorials, and community support seamlessly. The AI tool enhances productivity by offering intelligent code suggestions, debugging assistance, and personalized learning paths, making it the ultimate environment for both novice and experienced developers.
+               A platform  that provides all the essential resources for software development, including MDN, W3Schools, and Stack Overflow, integrated with a built-in AI tool. This combination offers an unparalleled experience for developers, allowing them to access comprehensive documentation, tutorials, and community support seamlessly. The AI tool enhances productivity by offering intelligent code suggestions, debugging assistance, and personalized learning paths, making it the ultimate environment for both novice and experienced developers.
               </p>
               <div className="flex gap-6">
                 <button

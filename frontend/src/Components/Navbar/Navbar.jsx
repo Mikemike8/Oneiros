@@ -1,10 +1,9 @@
-                                                  import React from "react";
+import React from "react";
 import Logo from "../../assets/logo.png";
 import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
 import DarkMode from "./DarkMode";
 import LoginButton from "../../../Authzero/Login";
 import LogoutButton from "../../../Authzero/Logout";
-
 
 const NavLinks = [
   {
@@ -16,9 +15,10 @@ const NavLinks = [
     id: 2,
     name: "Onerios",
     link: "https://youai.ai/ais/04f072b5-d4b3-4fea-9b6c-ffb4b87b73d1/use",
-  },{
+  },
+  {
     id: 3,
-    name: "Programs",
+    name: "HUB",
     link: "#",
   },
   {
@@ -26,12 +26,7 @@ const NavLinks = [
     name: "Creators",
     link: "#",
   },
-  {
-    id: 4,
-    name: "Contact",
-    link: "#",
-  },
-]             ;
+];
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = React.useState(false);
@@ -44,11 +39,13 @@ const Navbar = () => {
           <div className="flex items-center gap-3">
             <img src={Logo} alt="" className="h-16" />
             <p className="text-3xl">
-  CODE <span className="font-bold text-yellow-200 hover:text-yellow-300 hover:shadow-md">HUB</span>
-</p>
-
+              CODE{" "}
+              <span className="font-bold text-yellow-200 hover:text-yellow-300 hover:shadow-md">
+                HUB
+              </span>
+            </p>
           </div>
-          
+
           {/* Desktop Menu section */}
           <nav className="hidden md:block">
             <ul className="flex items-center gap-8">
@@ -61,16 +58,21 @@ const Navbar = () => {
                     >
                       {name}
                     </a>
-                    
                   </li>
                 );
               })}
-              <LoginButton></LoginButton>
-          <LogoutButton></LogoutButton>
+             
               {/* Darkmode feature */}
+              <input
+                type="text"
+                style={{
+                  backgroundColor:"#555"
+                }}
+              />
+               <LoginButton></LoginButton>
+              <LogoutButton></LogoutButton>
               <DarkMode />
             </ul>
-            
           </nav>
 
           {/* Mobile View Sidebar */}
